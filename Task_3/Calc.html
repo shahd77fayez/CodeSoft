@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Calc.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Calculator</title>
+</head>
+<body>
+  
+	<div class="container">
+    <h1> Welcome to Online Calculator </h1>
+		<div class="Calc_div">
+            <table class="calculator" >
+                <tr>
+                  <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+                  <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+                </tr>
+                <tr>
+                  <td> <input type="button" value="1" onclick="Show('1')" /> </td>
+                  <td> <input type="button" value="2" onclick="Show('2')" /> </td>
+                  <td> <input type="button" value="3" onclick="Show('3')" /> </td>
+                  <td> <input type="button" value="/" onclick="Show('/')" /> </td>
+                </tr>
+                <tr>
+                  <td> <input type="button" value="4" onclick="Show('4')" /> </td>
+                  <td> <input type="button" value="5" onclick="Show('5')" /> </td>
+                  <td> <input type="button" value="6" onclick="Show('6')" /> </td>
+                  <td> <input type="button" value="-" onclick="Show('-')" /> </td>
+                </tr>
+                <tr>
+                  <td> <input type="button" value="7" onclick="Show('7')" /> </td>
+                  <td> <input type="button" value="8" onclick="Show('8')" /> </td>
+                  <td> <input type="button" value="9" onclick="Show('9')" /> </td>
+                  <td> <input type="button" value="+" onclick="Show('+')" /> </td>
+                </tr>
+                <tr>
+                  <td> <input type="button" value="." onclick="Show('.')" /> </td>
+                  <td> <input type="button" value="0" onclick="Show('0')" /> </td>
+                  <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+                  <td> <input type="button" value="*" onclick="Show('*')" /> </td>
+                </tr>
+              </table>
+		</div>
+	</div>
+    <script type="text/javascript" src="Calc.js"></script>
+</body>
+</html>
